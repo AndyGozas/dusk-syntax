@@ -2,8 +2,9 @@
 name = "dusk-syntax"
 description = "Crate, that defines structures and methods, used for storing and processing of syntax elements, used in dusk project"
 readme = "README.md"
+license = "GPL-3.0-or-later"
 license-file = "LICENSE"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["Andy Gozas <andy@gozas.me>"]
 edition = "2018"
 
