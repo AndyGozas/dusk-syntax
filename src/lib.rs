@@ -30,13 +30,31 @@ pub enum Element {
         value: Box<dyn Any>,
     },
 
+    Operator {
+        value: String,
+    }
+
+    Block {
+        block_type: String,
+        contents: Vec<ElementReference>,
+    }
+
+    Command {
+        keyword: String,
+        contents: Vec<ElementReference>,
+    }
+
+    NameCall {
+        name: String,
+    }
+
     /// If the element is a function call, the function's name and
     /// its arguments should be placed in a
     /// [`ElementReference::Function`]
     ///
     /// Function name then will be stored as a String, and the
     /// arguments as a vector of Element References
-    Function {
+    FunctionCall {
         name: String,
         args: Vec<ElementReference>,
     },
